@@ -1,51 +1,115 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .menuItem {
-    display: block;
-    margin: 2rem 4rem;
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .menuItem:hover {
-    text-decoration: underline;
-  }
-  
-  .hamburger {
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    border: black solid 1px;
-    background: white;
-    cursor: pointer;
-  }
-  
-  .closeIcon {
-    display: none;
-  }
-  
-  .menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: black;
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
-  }
-  
-  .showMenu {
-    transform: translateY(0);
-  }
+@font-face {
+  font-family: Custom_goldoni;
+  src: url("../Fonts/Goldoni_DEMO.otf");
+}
+
+:root{
+  --background_color : #1f1f1f;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--background_color);
+  overflow: hidden;
+  background-image: radial-gradient(black 2.6px, transparent 0);
+  background-size: 38px 38px;
+  background-position: -19px -19px;
+}
+
+
+/* Nav */
+nav{
+  margin: 2% 5%;
+  padding: 40px 80px;
+  border: 2px solid #000;
+  background: var(--background_color);
+  box-shadow: -12px 12px 0px 0px #000;
+}
+
+.close_nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close_nav h1{
+  font-size: 38px;
+  font-family: Minecraft;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.open_nav{
+  display: none;
+}
+
+.bar{
+  display: block;
+  height: 4px;
+  width: 60px;
+  margin: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+
+/* intro */
+.intro{
+  margin: 6% 20% 10% 20%;
+}
+
+.intro h1{
+  color: #FFF;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 70px;
+  font-family: Minecraft;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.intro button{
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+}
+
+.intro button p{
+  margin: 17px 20px;
+  color: #000;
+  font-size: 32px;
+  font-family: Minecraft;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.intro button img{
+  margin-right: 20px;
+}
+
+/* Our_services  */
+.our_services{
+  padding: 50px 100px;
+  border-radius: 100px;
+  background-color: var(--background_color);
+  height: 100vh;
+}
