@@ -136,8 +136,76 @@ nav{
 
 /* Our_services  */
 .our_services{
-  padding: 50px 100px;
+  padding: 50px 8%;
   border-radius: 100px;
   background-color: var(--background_color);
   height: 100vh;
+}
+
+.our_services h1{
+  margin: 20px;
+  font-size: 38px;
+  font-family: 'Minecraft_Bold';
+}
+
+.service{
+  margin-top: 30px;
+  padding: 12px;
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.5px solid #FFF;
+}
+
+.pixel_art{
+  height: 100%;
+  width: height;
+  background-color: white;
+}
+
+.pixel_art img{
+  padding: 10px;
+  height: 100%;
+}
+
+.service_text{
+  margin-right: 80px;
+  margin-left: 40px;
+}
+
+.service_text h2{
+  font-size: 34px;
+  font-family: 'Minecraft_Regular';
+  font-weight: 200;
+}
+
+.service_text p{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+
+.know_more button{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+}
+
+.know_more button p{
+  white-space: nowrap;
+  margin: 12px 20px;
+  color: #000;
+  font-size: 22px;
+  font-family: Minecraft;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.know_more button img{
+  width: 40px;
+  margin-right: 20px;
 }
