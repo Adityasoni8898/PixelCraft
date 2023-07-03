@@ -1,11 +1,26 @@
 @font-face {
-  font-family: Custom_goldoni;
-  src: url("../Fonts/Goldoni_DEMO.otf");
+  font-family: 'Minecraft_Regular';
+  src: url("../Fonts/MinecraftRegular-Bmg3.otf");
+}
+
+@font-face {
+  font-family: 'Minecraft_Bold';
+  src: url("../Fonts/MinecraftBold-nMK1.otf");
 }
 
 :root{
   --background_color : #1f1f1f;
 }
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+
 
 *{
   margin: 0;
@@ -13,7 +28,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Minecraft_Regular';
   color: white;
 }
 
@@ -25,19 +40,18 @@ html{
 body{
   background-color: var(--background_color);
   overflow: hidden;
-  background-image: radial-gradient(black 2.6px, transparent 0);
+  background-image: radial-gradient(black 2.5px, transparent 0);
   background-size: 38px 38px;
   background-position: -19px -19px;
 }
 
-
 /* Nav */
 nav{
-  margin: 2% 5%;
+  margin: 2% 7%;
   padding: 40px 80px;
   border: 2px solid #000;
   background: var(--background_color);
-  box-shadow: -12px 12px 0px 0px #000;
+  box-shadow: -10px 10px 0px 0px #000;
 }
 
 .close_nav{
@@ -47,8 +61,8 @@ nav{
 }
 
 .close_nav h1{
-  font-size: 38px;
-  font-family: Minecraft;
+  font-size: 32px;
+  font-family: "Minecraft_Bold";
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -77,7 +91,21 @@ nav{
 .intro h1{
   color: #FFF;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-size: 70px;
+  font-size: 65px;
+  font-family: Minecraft;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.animated_gradient{
+  animation: background-pan 3s linear infinite; 
+  background: linear-gradient(to right, #DE57FF, #3aa3ff, #9CD0FF, #DE57FF);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  font-size: 65px;
   font-family: Minecraft;
   font-style: normal;
   font-weight: 400;
