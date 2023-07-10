@@ -45,6 +45,10 @@ body{
   background-position: -19px -19px;
 }
 
+.hamburger{
+  display: none;
+}
+
 /* Nav */
 nav{
   margin: 2% 7%;
@@ -120,7 +124,7 @@ nav{
   background-color: white;
 }
 
-.intro button p{
+.intro button a {
   margin: 17px 20px;
   color: #000;
   font-size: 32px;
@@ -137,7 +141,7 @@ nav{
   padding: 50px 8%;
   border-radius: 100px;
   background-color: var(--background_color);
-  height: 100vh;
+  height: fit-content;
 }
 
 .our_services h1{
@@ -209,12 +213,61 @@ nav{
 }
 
 
+/* Contact */
+.contact_us_container{
+  padding: 131px 8%;
+}
+
+.contact_us_container h1{
+  font-size: 48px;
+font-style: normal;
+font-weight: 700;
+}
+
+.contact_us_container h3{
+  margin-top: 81px;
+  font-size: 81px;
+  font-weight: 400;
+}
+
+.contact_us_container input{
+  margin-top: 45px;
+  font-family: Minecraft;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+border: 3px solid rgba(0, 0, 0, 0.383);
+background: #222;
+padding: 8px;
+}
+
+
+.contact_us_container button{
+  margin-top: 35px;
+  color: white;
+  font-size: 40px;
+font-style: normal;
+font-weight: 400;
+border: 3px solid rgba(0, 0, 0, 0.383);
+background: rgb(0, 0, 0);
+padding: 15px;
+}
 
 
 
-@media screen and (max-width:768px){
+
+@media screen and (max-width:750px){
   nav{
     margin: 20px;
     padding: 40px 30px;
   }
+
+  .close_nav h1{
+    font-size: 36px;
+  }
+
+  .our_services {
+    height: fit-content;
+  }
+
 }
